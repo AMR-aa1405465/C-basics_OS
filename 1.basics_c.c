@@ -28,11 +28,11 @@ void main(){
   //------------------------------------------------------------------------------------------------//  
 
    // Print the variables
-   printf("int a = %d\n", a);
-   printf("float b = %f\n", b);
-   printf("char c = %c\n", c);
-   printf("double d = %lf\n", d);
-   printf("long e = %ld\n", e);
+   printf(" a = %d\n", a);
+   printf(" b = %f\n", b);
+   printf(" c = %c\n", c);
+   printf(" d = %lf\n", d);
+   printf(" e = %ld\n", e);
 
 
 }
