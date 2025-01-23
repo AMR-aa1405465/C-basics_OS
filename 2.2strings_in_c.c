@@ -11,25 +11,27 @@ void main(){
     char str1[] = "Hello"; // use it when you know the size of the string   
     char str2[] = {'H', 'e', 'l', 'l', 'o', '\0'}; // use it when you don't know the size of the string
     char str3[6] = "Hello"; // use it when you know the size of the string
-
+    char str4[50]; //buffer
 
     // 2. How to know the length of a string
     int len = strlen(str1);
     printf("Length of str1: %d\n", len);
+
+
     int len2 = sizeof(str2)-1;
     printf("Length of str2: %d\n", len2);
 
 
     // 3. How to concatenate two strings
-    char str4[] = "Hello";
-    char str5[] = "World";
-    strcat(str4, str5);
-    printf("Concatenated string: %s\n", str4);
+    char str40[30] = "Hello";
+    char str5[] = " World";
+    strcat(str40, str5);
+    printf("Concatenated string: %s\n", str40);
 
 
     // 4. How to compare two strings
     char str6[] = "Hello";
-    char str7[] = "Hello";
+    char str7[] = "Hello"; //equals == ===
     int result = strcmp(str6, str7);
     if(result == 0){
         printf("Strings are equal\n");
@@ -38,7 +40,7 @@ void main(){
     }
 
 
-   // 5. Convert string to int 
+   // 5. Convert string to int // Integer.parseInt("1")
    char str8[] = "123";
    int num = atoi(str8);
    printf("Number: %d\n", num);
