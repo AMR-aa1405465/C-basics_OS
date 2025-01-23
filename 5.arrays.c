@@ -11,6 +11,7 @@ void main(){
  
  // 1. How to declare an array
  int arr[5] = {1, 2, 3, 4, 5}; // int array 
+//  int arr22[] = {2,3,4,5,6};
  float arr2[5] = {1.1, 2.2, 3.3, 4.4, 5.5}; // float array
  char arr3[5] = {'a', 'b', 'c', 'd', 'e'}; // char array == string also 
 
