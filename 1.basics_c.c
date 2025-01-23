@@ -13,6 +13,10 @@ void main(){
    
     /*
     This is a multi-line comment
+    dsf
+    sdf
+    sd
+    f
     */
 
 
@@ -28,8 +32,11 @@ void main(){
   //------------------------------------------------------------------------------------------------//  
 
    // Print the variables
+
+   
+
    printf(" a = %d\n", a);
-   printf(" b = %f\n", b);
+   printf(" b = %.3f\n", b);
    printf(" c = %c\n", c);
    printf(" d = %lf\n", d);
    printf(" e = %ld\n", e);
