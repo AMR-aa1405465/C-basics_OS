@@ -23,7 +23,7 @@ void main(){
 
     // --------------------------------------------------------------------- //
 
-    // 2. (3 state if condition)
+    // 2. (3+ state if condition)
     int b = 10;
     if(b > 5){
         printf("b is greater than 5\n");

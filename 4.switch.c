@@ -24,22 +24,4 @@ switch(a){
 }
 
 
-//More recently, switch statements can be used for strings
-printf("Enter a string: ");
-char str[100];
-scanf("%s", str);
-switch(str){
-    case "hello":
-        printf("the user input is hello\n");
-        break;
-    case "world":
-        printf("the user input is world\n");
-        break;
-    default:
-        printf("the user input is not hello or world\n");
-        break;
-}
-
-
-
 }
