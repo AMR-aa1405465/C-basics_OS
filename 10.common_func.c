@@ -11,7 +11,7 @@ int fibonacci(int n){
 }
 
 // factorial
-int factorial(int n){
+int factorial(int n){ 
     if(n == 0) return 1;
     return n * factorial(n-1);
 }
@@ -42,17 +42,18 @@ int isPalindrome(int n){
 // reverse a string
 char* reverseString(char* str){
     int len = strlen(str);
-    char* reversed = (char*)malloc(len+1);
-    for(int i = 0; i < len; i++){
+    char* reversed = (char*)malloc(len+1);//creates a seperate string
+    for(int i = 0; i < len; i++){//hello , reversed[0]=o 
         reversed[i] = str[len-i-1];
     }
     reversed[len] = '\0';
     return reversed;
 }
 
+
 // is even
 int isEven(int n){
-    return n % 2 == 0;
+    return n % 2 == 0; //1, 0
 }
 
 // is odd
@@ -64,6 +65,8 @@ int isOdd(int n){
 int isDivisibleByN(int n, int divisor){
     return n % divisor == 0;
 }
+
+//hw create a function that checks if a number is divisible by N & M 
 
 
 
