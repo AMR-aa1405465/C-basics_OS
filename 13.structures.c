@@ -17,7 +17,7 @@ void main(){
 
     // create a person
     struct Person p1;
-
+    
     // assign values to the person
     p1.id = 1;
     strcpy(p1.name, "Amr");
@@ -33,9 +33,12 @@ void main(){
     printf("The person's name is %s\n", p2.name);
     printf("The person's age is %d\n", p2.age);
 
+
     // we can also create an array of people/objects 
     struct Person people[2];
-    for(int i = 0; i < 2; i++){
+    //array of objects in java
+    int i;
+    for(i = 0; i < 2; i++){
          // create a dummy person
          struct Person p;
 
