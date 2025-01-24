@@ -20,7 +20,7 @@ int size;
 scanf("%d", &size);
 
 // Step3: allocate memory for the array
-dynArray = (int*)malloc(sizeof(int)*size); // allocate memory for the array
+dynArray = (int*) malloc(sizeof(int)*size); // allocate memory for the array
 
 
 

@@ -6,11 +6,10 @@
 
 // in this file, we will learn about pointers
 // Pointers are variables that store the address of another variable
-// they are used to directly access the memory address of a variable
-// they are declared using the * symbol.
-// they are used to pass variables to functions by reference.
-// They have many uses & we will see them in many contexts.
-void main(){
+
+void swap(int* a, int* b);
+
+int main(){
 
     int a = 10;
     int* ptr = &a; // ptr is a pointer to the address of a
@@ -21,9 +20,30 @@ void main(){
     printf("The value of a is %d\n", *ptr);
 
     // we can also change the value of a through the pointer
-    *ptr = 20;
+    *ptr = 20; //mem[0x4000] = 20 
     printf("The value of a is %d\n", a);
 
+    int arr[3] = {1,2,3};
+    int *pr = arr; 
+    // printf("%d",*(pr+2))
+    char *str = "hello";
 
-
+    
+    
+    printf("Swapping two variables using pointers.");
+    int x = 10 ; 
+    int y = 15 ; 
+    printf("Before swapping, x=%d y=%d\n",x,y);
+    
+    swap(&x,&y);
+    
+    printf("After swapping, x=%d y=%d\n",x,y);
+    
+return 0;
 }   
+
+void swap(int* a, int* b){
+    int temp = *a ; 
+    *a = *b ; 
+    *b = temp; 
+}
